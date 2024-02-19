@@ -1,0 +1,14 @@
+para baixar o projeto temos que fazer um git clone https://github.com/matheusbattisti/curso_adonis_api_yt.git
+
+Depois entrar com terminal na pasta raiz do projeto e executar: npm install
+
+Para rodar o servidor da api: node ace serve
+
+Provalvelmente deve falhar pois esta pedindo a variavel de ambiente API_KEY, para gerar essa key devemos usar o comando: node ace generate:key
+
+Devemos criar um novo arquivo a partir do env.example com o nome .env, e substituir pelo valor da key gerada na propriedade APP_KEY
+
+Depois vamos criar as tabelas do banco: node ace migration:run
+
+
+Para rodar o servidor da api novamente: node ace serve
